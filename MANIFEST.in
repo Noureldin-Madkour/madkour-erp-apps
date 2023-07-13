@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include madkour_procurement *.css
+recursive-include madkour_procurement *.csv
+recursive-include madkour_procurement *.html
+recursive-include madkour_procurement *.ico
+recursive-include madkour_procurement *.js
+recursive-include madkour_procurement *.json
+recursive-include madkour_procurement *.md
+recursive-include madkour_procurement *.png
+recursive-include madkour_procurement *.py
+recursive-include madkour_procurement *.svg
+recursive-include madkour_procurement *.txt
+recursive-exclude madkour_procurement *.pyc
