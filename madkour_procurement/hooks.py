@@ -750,7 +750,7 @@ web_include_css = "/assets/js/web_ecs.min.css"
 # ------------
 
 # before_install = "madkour_procurement.install.before_install"
-# after_install = "madkour_procurement.install.after_install"
+after_install = "madkour_procurement.install.after_install"
 
 # Desk Notifications
 # ------------------

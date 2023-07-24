@@ -31,7 +31,7 @@ def on_update_after_submit(doc, method=None):
 def before_save(doc, method=None):
     
     for item in doc.items:
-        if item.assign == 1 and doc.custom_assign_to:
+        if item.custom_assign == 1 and doc.custom_assign_to:
             # Create ToDo doctype for this material request
             current_user = frappe.session.user
             current_user_full_name = frappe.get_value("User", current_user, "full_name")
@@ -58,9 +58,9 @@ def before_save(doc, method=None):
             full_name = user.get('full_name')
             full_name = full_name.title()
             item.buyer = full_name
-            item.assign = 0
+            item.custom_assign = 0
             doc.custom_assign_to = ''
-            doc.custom_assign_to_all = 0
+            doc.custom_as = 0
 
 @frappe.whitelist()
 def before_cancel(doc, method=None):
