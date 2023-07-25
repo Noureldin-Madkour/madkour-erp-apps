@@ -749,8 +749,8 @@ web_include_css = "/assets/js/web_ecs.min.css"
 # Installation
 # ------------
 
-# before_install = "madkour_procurement.install.before_install"
-after_install = "madkour_procurement.install.after_install"
+before_install = "madkour_procurement.doctype_triggers.install.before_install"
+after_install = "madkour_procurement.doctype_triggers.install.after_install"
 
 # Desk Notifications
 # ------------------
